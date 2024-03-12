@@ -1,7 +1,5 @@
 // link => https://leetcode.com/problems/longest-common-prefix/description/
 
-// issue is number 14
-
 // Solution 1
 const longestCommonPrefix = function (strs) {
   let res = [];
