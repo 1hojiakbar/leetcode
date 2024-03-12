@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/search-insert-position/
+// link => https://leetcode.com/problems/search-insert-position/
 
 // Solution 1
 const searchInsert = function (nums, target) {
