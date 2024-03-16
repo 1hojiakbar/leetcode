@@ -1,6 +1,8 @@
 // link => https://leetcode.com/problems/longest-common-prefix/description/
 
 // Solution 1
+// Runtime - 64ms / 19.16%
+// Memory - 50.20mb / 33.22%
 const longestCommonPrefix = function (strs) {
   let res = [];
   let letter = "";

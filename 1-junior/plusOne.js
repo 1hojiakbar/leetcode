@@ -1,6 +1,8 @@
 // link => https://leetcode.com/problems/plus-one/description/
 
 // Solution 1
+// Runtime - 35ms / 99.64%
+// Memory - 48.98mb / 34.27%
 const plusOne = function (digits) {
   let num = BigInt(digits.join(""));
   num += 1n;
