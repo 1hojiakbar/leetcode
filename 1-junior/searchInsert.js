@@ -1,6 +1,8 @@
 // link => https://leetcode.com/problems/search-insert-position/
 
 // Solution 1
+// Runtime - 65ms / 5.05%
+// Memory - 50.52 / 5.46%
 const searchInsert = function (nums, target) {
   if (nums.includes(target)) {
     let index = nums.findIndex((val) => val == target);
