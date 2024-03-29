@@ -27,4 +27,28 @@ const longestCommonPrefix = function (strs) {
   }
 };
 
-console.log(longestCommonPrefix(["flower", "flow", "flight"])); // fl
+// Solution 2
+// Runtime - 66ms / 13.56%
+// Memory - 51.70mb / 10.44%
+const solution2 = function (strs) {
+  let word = "";
+  let arr = [];
+  let res = [];
+  for (let i in strs) {
+    strs[i].split("").forEach((val) => {
+      word += val;
+      arr = strs.every(
+        (value) => value.includes(word) && value.startsWith(word)
+      );
+      if (arr) {
+        res.push(word);
+      }
+    });
+  }
+
+  if (res.length >= 1) {
+    return res.at(-1);
+  } else return "";
+};
+
+console.log(solution2(["flower", "flow", "flight"]));
